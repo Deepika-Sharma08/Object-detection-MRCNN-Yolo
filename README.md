@@ -71,5 +71,7 @@ Which will require:
 **c.** Data across various departments for better generalisation.
 
 ### Related work:
-I've built a similar solution for other project, following is the link for solution I built:
+I've built a similar solution for other project where objective was to detect ALL wheat heads in given imgaes.
+Annotated data contained 3000 images for training and ~300 images were left for testing. Following is the link for solution I built:
+
 https://github.com/Deepika-Sharma08/Wheat_head_prediction/blob/master/Wheat%20head%20detection%20VGG%20Unet%20Pyspark%20v1.html
