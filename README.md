@@ -61,6 +61,8 @@ These methods are used to detect objects in retail shelves images and finding co
 ### Closing Notes:
 `To buid a foolproof solution for this problem, I'll suggest transfer learning using VGG 16/19/UNet and only shallow training last few layers to achieve the objective:`
 Which will require:
+
+
 **a.** Annotated data which has bounding boxes for void/blank spaces where no product is placed.
 
 **b.** Corresponding names of all possible classes under which shelf products can possibly fall.
