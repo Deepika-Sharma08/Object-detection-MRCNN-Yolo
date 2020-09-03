@@ -4,7 +4,7 @@
 
 **These problems are seemingly difficult to solve and I've personally known/experienced such problems where it took 3 months time to get a reasonable solution :)**
 
-** Note: This solution does not include training any Deep Learning model for detecting empty spaces in Retail shelves, instead I have put efforts in making use of functionalities of existing vision libraries and pre-trained models to valiate if a solution can be build to handle this problem.
+** Note: This solution does not include training any Deep Learning model for detecting empty spaces in Retail shelves, instead I have put efforts in making use of functionalities of existing computer vision libraries and pre-trained models to validate if a solution can be build to handle this problem.
 
 
 ## Notebook Structure
@@ -24,11 +24,11 @@
 
 ### Methodology Using OpenCV
 
-`Steps taken to get the empty space as foreground`
+`Steps taken to get the empty space`
 
 1. Reading images as numpy array using opencv.
-2. Histogram based thresholding to seperate foreground and background.
-3. Canny edge detection to find objects in the image.
+2. Histogram based thresholding to create binary image.
+3. Canny edge detection to find edges/objects in the image.
 4. Dilate and erode image with vertical and horizontal kernals to merge edges if too close.
 5. Reverse the image to get empty space highlighted as 1's.
 6. Co-ordinates detection using rectangle identification [rectangles of ones in the image] 
@@ -40,11 +40,12 @@
 
 
 ### Challanges using Open CV
-- If an image, products are placed behind each other, depth of the product is difficult to estimate using present algorithm and it is not able to pick if there is empty space in front of product in second row. It can be fixed using depth based filter.
+- If in given image, products are placed behind each other then depth of the product is difficult to estimate using present algorithm and it is not able to pick if there is empty space in front of product which is placed in second row. It can be fixed using depth based filter.
 - If there other objects in the image like floor, roof, human.. algorithms is failing to seperate the two using canny edge detection,,, which of course is not a right tool for seperating the objects.
 
+
 `For separating objects, CascadeClassifier can be trained for various possible objects in the image for separating objects of interest vs other objects.`
-- if product box contains black color logo which is very large or product box itself is black color, thresholding based approach tend to classify such objects as background.
+- if product box contains black color logo which is very large or product box itself is black color, thresholding based approach tend to classify such objects as background. More adaptive ways to binarise the images is required.
 
 
 ### Other methods tried
@@ -74,7 +75,7 @@ Which will require:
 **c.** Data across various departments for better generalisation.
 
 ### Related work:
-I've built a similar solution for other project where objective was to detect ALL wheat heads in given imgaes.
-Annotated data contained 3000 images for training and ~300 images were left for testing. Following is the link for solution I built:
+I've built a similar solution for other project where objective was to detect `ALL` wheat heads in given imgaes.
+Annotated data contained 3000 images for training and ~300 images were left for testing. Following is the link for the solution I built:
 
 https://github.com/Deepika-Sharma08/Wheat_head_prediction/blob/master/Wheat%20head%20detection%20VGG%20Unet%20Pyspark%20v1.html
