@@ -8,13 +8,13 @@
 
 
 ## Notebook Structure
-- Appraoches: 
+- Approaches: 
 
 - 1. OpenCV
 - 2. YOLO
 - 3. Mask RCNN
-- 4. Custom appraoch : Suggested
-- Challanges, Way Forward
+- 4. Custom approach : Suggested
+- Challenges, Way Forward
 
 
 
@@ -29,7 +29,7 @@
 1. Reading images as numpy array using opencv.
 2. Histogram based thresholding to create binary image.
 3. Canny edge detection to find edges/objects in the image.
-4. Dilate and erode image with vertical and horizontal kernals to merge edges if too close.
+4. Dilate and erode image with vertical and horizontal kernels to merge edges if too close.
 5. Reverse the image to get empty space highlighted as 1's.
 6. Co-ordinates detection using rectangle identification [rectangles of ones in the image] 
 
@@ -39,7 +39,7 @@
 ![alt text](https://github.com/Deepika-Sharma08/Object-detection-MRCNN-Yolo/blob/master/Results_/segmented_images.png?raw=true)
 
 
-### Challanges using Open CV
+### Challenges using Open CV
 - If in given image, products are placed behind each other then depth of the product is difficult to estimate using present algorithm and it is not able to pick if there is empty space in front of product which is placed in second row. It can be fixed using depth based filter.
 - If there other objects in the image like floor, roof, human.. algorithms is failing to seperate the two using canny edge detection,,, which of course is not a right tool for seperating the objects.
 
@@ -60,7 +60,7 @@ These methods are used to detect objects in retail shelves images and finding co
 
 
 ### Closing Notes:
-`To buid a foolproof solution for this problem, I'll suggest transfer learning using VGG 16/19/UNet and only shallow training last few layers to achieve the objective.`
+`To build a foolproof solution for this problem, I'll suggest transfer learning using VGG 16/19/UNet and only shallow training last few layers to achieve the objective.`
 
 Which will require:
 
@@ -75,7 +75,7 @@ Which will require:
 **c.** Data across various departments for better generalisation.
 
 ### Related work:
-I've built a similar solution for other project where objective was to detect `ALL` wheat heads in given imgaes.
+I've built a similar solution for other project where objective was to detect `ALL` wheat heads in given images.
 Annotated data contained 3000 images for training and ~300 images were left for testing. Following is the link for the solution I built:
 
 https://github.com/Deepika-Sharma08/Wheat_head_prediction/blob/master/Wheat%20head%20detection%20VGG%20Unet%20Pyspark%20v1.html
