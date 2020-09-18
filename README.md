@@ -57,8 +57,9 @@ These methods are used to detect objects in retail shelves images and finding co
 ### Results look like this:
 
 ![alt text](https://github.com/Deepika-Sharma08/Object-detection-MRCNN-Yolo/blob/master/Results/Results_using_Blob%20detection.png?raw=true)
-![alt text](https://github.com/Deepika-Sharma08/Object-detection-MRCNN-Yolo/blob/master/Results/1.png?raw=true)
-![alt text](https://github.com/Deepika-Sharma08/Object-detection-MRCNN-Yolo/blob/master/Results/2.png?raw=true)
+![alt text](https://github.com/Deepika-Sharma08/Object-detection-MRCNN-Yolo/blob/master/Results/1.jpg?raw=true)
+![alt text](https://github.com/Deepika-Sharma08/Object-detection-MRCNN-Yolo/blob/master/Results/2.jpg?raw=true)
+
 
 ### Closing Notes:
 `To build a foolproof solution for this problem, I'll suggest transfer learning using VGG 16/19/UNet and only shallow training last few layers to achieve the objective.`
