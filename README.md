@@ -76,6 +76,6 @@ Which will require:
 
 ### Related work:
 I've built a similar solution for other project where objective was to detect `ALL` wheat heads in given images.
-Annotated data contained 3000 images for training and ~300 images were left for testing. Following is the link for the solution I built:
+Annotated data contained 3000 images for training and ~300 images were left for testing. Following is the link for the solution:
 
 https://github.com/Deepika-Sharma08/Wheat_head_prediction/blob/master/Wheat%20head%20detection%20VGG%20Unet%20Pyspark%20v1.html
