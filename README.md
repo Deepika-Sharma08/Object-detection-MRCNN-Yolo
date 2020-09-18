@@ -57,8 +57,10 @@ These methods are used to detect objects in retail shelves images and finding co
 ### Results look like this:
 
 ![alt text](https://github.com/Deepika-Sharma08/Object-detection-MRCNN-Yolo/blob/master/Results/Results_using_Blob%20detection.png?raw=true)
-![alt text](https://github.com/Deepika-Sharma08/Object-detection-MRCNN-Yolo/blob/master/Results/1.jpg?raw=true)
+
 ![alt text](https://github.com/Deepika-Sharma08/Object-detection-MRCNN-Yolo/blob/master/Results/2.jpg?raw=true)
+
+
 
 
 ### Closing Notes:
